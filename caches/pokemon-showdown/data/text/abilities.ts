@@ -7,10 +7,6 @@ export const AbilitiesText: {[k: string]: AbilityText} = {
 		name: "Lapis Flow",
 		shortDesc: "This Pokemon's offensive stat is multiplied by 1.5 while using a Psychic-type attack.",
 	},
-	secondchance: {
-		name: "Second Chance",
-		shortDesc: "Heals to 50% HP and has stats and status reset instead of fainting. Once per battle.",
-	},
 	soulkindle: {
 		name: "Soulkindle",
 		shortDesc: "This Pokemon and its allies have their Attack and Special Attack multiplied by 1.1.",
