@@ -4,7 +4,6 @@ Thumbs.db
 npm-debug.log
 /config/
 /vendor/
-/caches/
 
 /play.pokemonshowdown.com/sprites/
 /play.pokemonshowdown.com/audio/
