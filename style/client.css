@@ -840,72 +840,126 @@ p.or:after {
 	margin: 10px 0;
 }
 .menugroup .button {
-	box-sizing: border-box;
-	font-size: 12pt;
+    box-sizing: border-box;
+    font-size: 12pt;
 
-	display: inline-block;
-	padding: 5px 7px 3px 7px;
+    display: inline-block;
+    padding: 5px 7px 3px 7px;
 
-	width: 200px;
+    width: 200px;
 
-	text-shadow: 0 -1px 0 hsl(210,40%,10%);
-	box-shadow: 0 1px 2px rgba(0,0,0,.2), inset 0 1px 1px rgba(255,255,255,.8);
+    text-shadow: none;
+    box-shadow: 0 2px 6px rgba(0,0,0,.15);
+    transition: all 0.2s ease;
 
-	/* default colors */
-	color: #FFFFFF;
-	border: solid 1px #AAAAAA;
-	background: #779EC5;
-	background: hsl(210,40%,62%);
-	background: linear-gradient(to bottom,  hsl(210,40%,72%),  hsl(210,40%,52%));
-	border-color: hsl(210,40%,40%);
+    /* modern colors */
+    color: #FFFFFF;
+    border: solid 1px #4a9eff;
+    background: linear-gradient(90deg, #894781, #dbec3e);
+    border-radius: 6px;
 }
 .menugroup .button.big {
-	width: 230px;
-	height: 50px;
-	padding: 0;
-	font-size: 14pt;
+    width: 230px;
+    height: 50px;
+    padding: 0;
+    font-size: 14pt;
+    font-weight: 600;
 }
 .menugroup .button.big small {
-	display: block;
-	font-size: 9pt;
+    display: block;
+    font-size: 9pt;
+    font-weight: normal;
 }
 .menugroup .button:hover {
-	background: #5485B6;
-	background: hsl(210,40%,52%);
-	background: linear-gradient(to bottom,  hsl(210,40%,62%),  hsl(210,40%,42%));
-	border-color: hsl(210,40%,21%);
+    background: linear-gradient(120deg, #64325e, #a2af2f);
+    border-color: rgba(255,255,255,0.3);
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0,0,0,.25);
 }
 .menugroup .button:active {
-	box-shadow: 0 1px 2px rgba(0,0,0,.2), inset 0 -1px 1px rgba(255,255,255,.3), inset 0 1px 1px rgba(0,0,0,.4);
-	background: #406B96;
-	background: hsl(210,40%,42%);
-	background: linear-gradient(to bottom,  hsl(210,40%,42%),  hsl(210,40%,58%));
-	border-color: hsl(210,40%,21%);
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+    background: linear-gradient(120deg, #411e3d, #6a7222);
+    border-color: rgba(255,255,255,0.5);
+    transform: translateY(0);
 }
 
-.button.mainmenu1 { background: linear-gradient(to bottom,  hsl(5,40%,72%),  hsl(5,40%,52%)); border-color: hsl(5,40%,40%); }
-.button.mainmenu1:hover { background: linear-gradient(to bottom,  hsl(5,40%,62%),  hsl(5,40%,42%)); }
-.button.mainmenu1:active { background: linear-gradient(to bottom,  hsl(5,40%,42%),  hsl(5,40%,58%)); }
+.button.mainmenu1 { 
+    background: linear-gradient(120deg, #894781, #dbec3e); 
+    border-color: #894781; 
+}
+.button.mainmenu1:hover { 
+    background: linear-gradient(120deg, #64325e, #a2af2f); 
+    border-color: #64325e; 
+}
+.button.mainmenu1:active { 
+    background: linear-gradient(120deg, #411e3d, #6a7222); 
+    border-color: #411e3d; 
+}
 
-.button.mainmenu2 { background: linear-gradient(to bottom,  hsl(30,40%,72%),  hsl(30,40%,52%)); border-color: hsl(30,40%,40%); }
-.button.mainmenu2:hover { background: linear-gradient(to bottom,  hsl(30,40%,62%),  hsl(30,40%,42%)); }
-.button.mainmenu2:active { background: linear-gradient(to bottom,  hsl(30,40%,42%),  hsl(30,40%,58%)); }
+.button.mainmenu2 { 
+    background: linear-gradient(120deg, #dbec3e, #894781); 
+    border-color: #894781; 
+}
+.button.mainmenu2:hover { 
+    background: linear-gradient(120deg, #a2af2f, #64325e); 
+    border-color: #64325e; 
+}
+.button.mainmenu2:active { 
+    background: linear-gradient(120deg, #6a7222, #411e3d); 
+    border-color: #411e3d; 
+}
 
-.button.mainmenu3 { background: linear-gradient(to bottom,  hsl(60,40%,72%),  hsl(60,40%,52%)); border-color: hsl(60,40%,40%); }
-.button.mainmenu3:hover { background: linear-gradient(to bottom,  hsl(60,40%,62%),  hsl(60,40%,42%)); }
-.button.mainmenu3:active { background: linear-gradient(to bottom,  hsl(60,40%,42%),  hsl(60,40%,58%)); }
+.button.mainmenu3 { 
+    background: linear-gradient(120deg, #894781, #dbec3e); 
+    border-color: #894781; 
+}
+.button.mainmenu3:hover { 
+    background: linear-gradient(120deg, #64325e, #a2af2f); 
+    border-color: #64325e; 
+}
+.button.mainmenu3:active { 
+    background: linear-gradient(120deg, #411e3d, #6a7222); 
+    border-color: #411e3d; 
+}
 
-.button.mainmenu4 { background: linear-gradient(to bottom,  hsl(130,40%,72%),  hsl(130,40%,52%)); border-color: hsl(130,40%,40%); }
-.button.mainmenu4:hover { background: linear-gradient(to bottom,  hsl(130,40%,62%),  hsl(130,40%,42%)); }
-.button.mainmenu4:active { background: linear-gradient(to bottom,  hsl(130,40%,42%),  hsl(130,40%,58%)); }
+.button.mainmenu4 { 
+    background: linear-gradient(120deg, #dbec3e, #894781); 
+    border-color: #894781; 
+}
+.button.mainmenu4:hover { 
+    background: linear-gradient(120deg, #a2af2f, #64325e); 
+    border-color: #64325e; 
+}
+.button.mainmenu4:active { 
+    background: linear-gradient(120deg, #6a7222, #411e3d); 
+    border-color: #411e3d; 
+}
 
-.button.mainmenu5 { background: linear-gradient(to bottom,  hsl(210,40%,72%),  hsl(210,40%,52%)); border-color: hsl(210,40%,40%); }
-.button.mainmenu5:hover { background: linear-gradient(to bottom,  hsl(210,40%,62%),  hsl(210,40%,42%)); }
-.button.mainmenu5:active { background: linear-gradient(to bottom,  hsl(210,40%,42%),  hsl(210,40%,58%)); }
+.button.mainmenu5 { 
+    background: linear-gradient(120deg, #894781, #dbec3e); 
+    border-color: #894781; 
+}
+.button.mainmenu5:hover { 
+    background: linear-gradient(120deg, #64325e, #a2af2f); 
+    border-color: #64325e; 
+}
+.button.mainmenu5:active { 
+    background: linear-gradient(120deg, #411e3d, #6a7222); 
+    border-color: #411e3d; 
+}
 
-.button.mainmenu6 { background: linear-gradient(to bottom,  hsl(270,40%,72%),  hsl(270,40%,52%)); border-color: hsl(270,40%,40%); }
-.button.mainmenu6:hover { background: linear-gradient(to bottom,  hsl(270,40%,62%),  hsl(270,40%,42%)); }
-.button.mainmenu6:active { background: linear-gradient(to bottom,  hsl(270,40%,42%),  hsl(300,40%,58%)); }
+.button.mainmenu6 { 
+    background: linear-gradient(120deg, #dbec3e, #894781); 
+    border-color: #894781; 
+}
+.button.mainmenu6:hover { 
+    background: linear-gradient(120deg, #a2af2f, #64325e); 
+    border-color: #64325e; 
+}
+.button.mainmenu6:active { 
+    background: linear-gradient(120deg, #6a7222, #411e3d); 
+    border-color: #411e3d; 
+}
 
 .rightmenu {
 	width: 294px;
@@ -1838,15 +1892,15 @@ a.ilink.yours {
 		cursor: pointer;
 		border: 1px solid #BBB;
 		border-radius: 3px;
-		color: #333;
-		background: #EEF2F5;
+		color: #EEF2F5;
+		background: #333;
 		font-size: 10pt;
 		font-weight: bold;
 }
 .megaevo:hover {
 		border-color: #888;
-		background: #E5E5E5;
-		color: black;
+		background: #202020;
+		color: #EEF2F5;
 }
 .allyparty,
 .switchmenu,
@@ -3275,4 +3329,574 @@ a.ilink.yours {
 .dark iframe.textbox:hover,
 .dark iframe.textbox:focus {
 	background: #DDDDDD;
+}
+
+html,
+* {
+    font-family: Calibri, 'Ubuntu', FontAwesome !important;
+    letter-spacing: 0.3px;
+}
+.ps-popup {
+    background: #1a1a1a !important;
+}
+.roomtab {
+    background-color: #3d3d3d !important;
+    border: 1px solid #333 !important;
+    border-bottom: 0 !important;
+    box-shadow: none !important;
+    padding-bottom: 10px !important;
+}
+.notifying {
+    background-color: #3a0000 !important;
+}
+.cur {
+    background-color: #222 !important;
+}
+.maintabbarbottom {
+    background-color: #444 !important;
+    border: none !important;
+    box-shadow: 0 1px 1px !important;
+}
+.ps-room {
+    border: 1px solid #222 !important;
+}
+.ps-room-light {
+    background: #222 !important;
+}
+.ilink {
+    color: lightgray !important;
+    border: 1px solid #4f4f4f !important;
+    background-color: #1a1a1a !important;
+}
+.pm-window > h3 {
+    background: #1a1a1a !important;
+    border: 1px solid #222 !important;
+}
+.pm-log {
+    background-color: #333 !important;
+    border: 1px solid #222 !important;
+    border-bottom-left-radius: 6px !important;
+    border-bottom-right-radius: 6px !important;
+}
+.newsentry {
+    border-bottom: 1px solid #222 !important;
+    color: #c1c1c1 !important;
+}
+.unread {
+    background: none !important;
+}
+.select {
+    background: rgba(112, 112, 112, 1) !important;
+    color: #e1e1e1 !important;
+}
+.button.mainmenu1,
+.button.mainmenu2,
+.button.mainmenu3,
+.button.mainmenu4,
+.button.mainmenu6,
+.button.mainmenu5 {
+    background: #404040 !important;
+    border: 1px #000;
+}
+
+.button.mainmenu1:hover,
+.button.mainmenu2:hover,
+.button.mainmenu3:hover,
+.button.mainmenu4:hover,
+.button.mainmenu6:hover,
+.button.mainmenu5:hover {
+    background: #808080 !important;
+    border: 1px #000;
+}
+
+.select > strong {
+    color: white !important;
+}
+
+.battle,
+.innerbattle {
+    border: none !important;
+}
+
+.controls {
+    background-color: #1a1a1a !important;
+}
+
+.battle-log {
+    background-color: #222 !important;
+    border: none !important;
+}
+
+.userlist {
+    background-color: #2d2d2d !important;
+    border: none !important;
+}
+
+.battle-history {
+    border: none !important;
+    padding: 2px !important;
+}
+
+.inner > h2 {
+    background-color: #2a2a2a !important;
+    padding-left: 10px !important;
+}
+
+.inner > .mine {
+    background-color: #222 !important;
+}
+
+.battle-log-add {
+    background-color: #2d2d2d !important;
+    border: none !important;
+}
+
+.text-area {
+    border-color: #555 !important;
+}
+
+.span {
+    text-shadow: none !important;
+}
+
+.tabbar.maintabbar {
+    margin-bottom: -1px !important;
+}
+#header,
+#wrapper .header,
+.pfx-topbar,
+.pfx-topbar.header,
+.ps-header {
+    background: #0D0D0D;
+    border: 0
+}
+#header,
+#wrapper .header {
+    height: 45px
+}
+.pfx-topbar,
+.pfx-topbar.header {
+    height: 60px
+}
+.userbar {
+    top: 10px;
+}
+.maintabbarbottom {
+    background: #4675aa;
+    border: none;
+    bottom: -10px;
+    height: 10px;
+}
+.tabbar a.button {
+    height: 40px;
+    cursor: pointer;
+    text-align: center;
+    color: #38342A;
+    background: #000;
+}
+.tabbar a.button:hover {
+    background: #9ABEE8;
+    color: #FFF;
+}
+.tabbar a.button:active {
+    background: #478BD9;
+    border-radius: 0;
+    height: 40px;
+}
+.tabbar a.button.cur,
+.tabbar a.button.cur:hover {
+    color: #FFF;
+    background: #478BD9;
+}
+.siderooms li {
+    z-index: 1;
+    margin-right: 1px;
+}
+.tabbar li:first-child a.button,
+.tabbar li:last-child a.button {
+    border-radius: 0;
+}
+.closebutton,
+.minimizebutton {
+    color: #38342A;
+}
+.closebutton:hover,
+.minimizebutton:hover,
+.closebutton:active,
+.minimizebutton:active {
+    color: #DDD;
+}
+.button.notifying {
+    border-color: #AA8866!important;
+    background: #e3c3a3!important;
+}
+.button.notifying:hover {
+    border-color: #604020!important;
+    background: #cfaf8f!important;
+}
+.button.cur,
+.button.cur:hover {
+    color: #FFF!important;
+    background: #478BD9!important;
+    box-shadow: none;
+    border-color: #AAAAAA;
+    cursor: default;
+}
+.button.subtle-notifying {
+    color: #AA6600;
+}
+.button.subtle-notifying .icon-comment-alt:before,
+.button.notifying .icon-comment-alt:before {
+    content: "\f0e6";
+}
+
+.ps-room.ps-room-light.scrollable ul li button {
+    border-radius: 3px;
+    border: 1px solid #000;
+    margin-bottom: 2px;
+    background: #000;
+    color: #F2F2F2;
+    padding: 2px 5px;
+    text-shadow: 1px 1px #000;
+}
+
+.deltastreamweather {
+    background: url(http://i.imgur.com/OEB3hum.gif) scroll left top;
+}
+
+.pseudoweather {
+    background: url(https://i.imgur.com/sZg0ZBH.png) scroll left top;
+}
+
+.messagebar {
+    z-index: 10;
+}
+
+.foehint div {
+    z-index: 11;
+}
+
+
+.switchmenu button,
+.switchmenu button.disabled {
+    background: url(https://i.imgur.com/nJ6MDKV.png) !important;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 8pt;
+    width: 100px;
+    height: 28px;
+}
+
+.switchmenu button,
+.switchmenu button.disabled {
+    color: #fff;
+    text-shadow: 1px 1px black;
+}
+
+.movemenu button {
+    width: 150px;
+    height: 50px;
+    border-radius: 0;
+    border-width: 0;
+    box-shadow: none;
+    color: white;
+    text-shadow: 1px 1px black;
+    font-size: 10pt;
+    padding-top: 10px;
+}
+
+.movemenu button small {
+    text-align: center;
+    width: 62px;
+    margin-top: 2px;
+}
+
+.movemenu button small.type,
+.movemenu button small.pp {
+    color: white;
+}
+
+.ps-room .movemenu button.type-Normal,
+.battle .movemenu button.type-Normal,
+.movemenu button.type-Normal {
+    background: #8a8a59 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Normal:hover,
+.battle .movemenu button.type-Normal:hover,
+.movemenu button.type-Normal:hover {
+    background: #79794e url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Fire,
+.battle .movemenu button.type-Fire,
+.movemenu button.type-Fire {
+    background: #dd6610 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Fire:hover,
+.battle .movemenu button.type-Fire:hover,
+.movemenu button.type-Fire:hover {
+    background: #b4530d url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Water,
+.battle .movemenu button.type-Water,
+.movemenu button.type-Water {
+    background: #386ceb url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Water:hover,
+.battle .movemenu button.type-Water:hover,
+.movemenu button.type-Water:hover {
+    background: #1753e3 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Electric,
+.battle .movemenu button.type-Electric,
+.movemenu button.type-Electric {
+    background: #f0c108 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Electric:hover,
+.battle .movemenu button.type-Electric:hover,
+.movemenu button.type-Electric:hover {
+    background: #c19b07 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Grass,
+.battle .movemenu button.type-Grass,
+.movemenu button.type-Grass {
+    background: #5ca935 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Grass:hover,
+.battle .movemenu button.type-Grass:hover,
+.movemenu button.type-Grass:hover {
+    background: #4a892b url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Ice,
+.battle .movemenu button.type-Ice,
+.movemenu button.type-Ice {
+    background: #69c6c6 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Ice:hover,
+.battle .movemenu button.type-Ice:hover,
+.movemenu button.type-Ice:hover {
+    background: #45b6b6 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Fighting,
+.battle .movemenu button.type-Fighting,
+.movemenu button.type-Fighting {
+    background: #9d2721 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Fighting:hover,
+.battle .movemenu button.type-Fighting:hover,
+.movemenu button.type-Fighting:hover {
+    background: #82211b url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Poison,
+.battle .movemenu button.type-Poison,
+.movemenu button.type-Poison {
+    background: #803380 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Poison:hover,
+.battle .movemenu button.type-Poison:hover,
+.movemenu button.type-Poison:hover {
+    background: #662966 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Ground,
+.battle .movemenu button.type-Ground,
+.movemenu button.type-Ground {
+    background: #d4a82f url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Ground:hover,
+.battle .movemenu button.type-Ground:hover,
+.movemenu button.type-Ground:hover {
+    background: #aa8623 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Flying,
+.battle .movemenu button.type-Flying,
+.movemenu button.type-Flying {
+    background: #9180c4 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Flying:hover,
+.battle .movemenu button.type-Flying:hover,
+.movemenu button.type-Flying:hover {
+    background: #7762b6 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Psychic,
+.battle .movemenu button.type-Psychic,
+.movemenu button.type-Psychic {
+    background: #f61c5d url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Psychic:hover,
+.battle .movemenu button.type-Psychic:hover,
+.movemenu button.type-Psychic:hover {
+    background: #d60945 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Bug,
+.battle .movemenu button.type-Bug,
+.movemenu button.type-Bug {
+    background: #8d9a1b url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Bug:hover,
+.battle .movemenu button.type-Bug:hover,
+.movemenu button.type-Bug:hover {
+    background: #616b13 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Rock,
+.battle .movemenu button.type-Rock,
+.movemenu button.type-Rock {
+    background: #93802d url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Rock:hover,
+.battle .movemenu button.type-Rock:hover,
+.movemenu button.type-Rock:hover {
+    background: #746523 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Ghost,
+.battle .movemenu button.type-Ghost,
+.movemenu button.type-Ghost {
+    background: #554374 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Ghost:hover,
+.battle .movemenu button.type-Ghost:hover,
+.movemenu button.type-Ghost:hover {
+    background: #413359 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Dragon,
+.battle .movemenu button.type-Dragon,
+.movemenu button.type-Dragon {
+    background: #4c08ef url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Dragon:hover,
+.battle .movemenu button.type-Dragon:hover,
+.movemenu button.type-Dragon:hover {
+    background: #3d07c0 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Dark,
+.battle .movemenu button.type-Dark,
+.movemenu button.type-Dark {
+    background: #513f34 url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Dark:hover,
+.battle .movemenu button.type-Dark:hover,
+.movemenu button.type-Dark:hover {
+    background: #362a23 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Steel,
+.battle .movemenu button.type-Steel,
+.movemenu button.type-Steel {
+    background: #9797ba url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Steel:hover,
+.battle .movemenu button.type-Steel:hover,
+.movemenu button.type-Steel:hover {
+    background: #7a7aa7 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-Fairy,
+.battle .movemenu button.type-Fairy,
+.movemenu button.type-Fairy {
+    background: #f89dff url(https://i.imgur.com/PerkGnk.png) !important;
+    color: white !important;
+    text-shadow: 1px 1px black !important;
+}
+
+.ps-room .movemenu button.type-Fairy:hover,
+.battle .movemenu button.type-Fairy:hover,
+.movemenu button.type-Fairy:hover {
+    background: #ce7fd5 url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+.ps-room .movemenu button.type-undefined,
+.battle .movemenu button.type-undefined,
+.movemenu button.type-undefined,
+.ps-room .movemenu button.type-undefined:hover,
+.battle .movemenu button.type-undefined:hover,
+.movemenu button.type-undefined:hover {
+    background: url(https://i.imgur.com/PerkGnk.png) !important;
+}
+
+/* Override any conflicting battle styles */
+.ps-room .movemenu button,
+.battle .movemenu button {
+    border: none !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+}
+
+/* Ensure disabled moves still show type colors but with reduced opacity */
+
+.movemenu button:disabled {
+    background: rgba(0, 0, 0, 0) url(https://i.imgur.com/PerkGnk.png) !important;
+    opacity: .5;
+}
+
+
+.dark .ps-room.ps-room-opaque,
+.dark .battle-log-add,
+.dark .battle-controls {
+    background: #1a1a1a;
+    color: #ddd;
 }

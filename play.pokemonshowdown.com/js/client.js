@@ -473,12 +473,12 @@ function toId() {
 
 				var theme = Dex.prefs('theme');
 				var colorSchemeQuery = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)');
-				var dark = theme === 'dark' || (theme === 'system' && colorSchemeQuery && colorSchemeQuery.matches);
+				var dark = theme === 'dark' || (!theme && true) || (theme === 'system' && colorSchemeQuery && colorSchemeQuery.matches);
 				$('html').toggleClass('dark', dark);
 				if (colorSchemeQuery && colorSchemeQuery.media !== 'not all') {
-					colorSchemeQuery.addEventListener('change', function (cs) {
-						if (Dex.prefs('theme') === 'system') $('html').toggleClass('dark', cs.matches);
-					});
+    				colorSchemeQuery.addEventListener('change', function (cs) {
+        				if (Dex.prefs('theme') === 'system') $('html').toggleClass('dark', cs.matches);
+    				});
 				}
 
 				var effectVolume = Dex.prefs('effectvolume');
