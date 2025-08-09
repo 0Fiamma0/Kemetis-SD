@@ -3491,7 +3491,7 @@ html,
     height: 40px;
     cursor: pointer;
     text-align: center;
-    color: #38342A;
+    color: white;
     background: #000;
 }
 .tabbar a.button:hover {
@@ -3891,6 +3891,15 @@ html,
 .movemenu button:disabled {
     background: rgba(0, 0, 0, 0) url(https://i.imgur.com/PerkGnk.png) !important;
     opacity: .5;
+}
+
+.sortrow {
+	background-color: #000000 !important;
+	color: white !important;
+}
+
+.roomtab a.button .tabbar {
+	color: white !important;
 }
 
 

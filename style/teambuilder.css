@@ -271,3 +271,7 @@
 	left: 10px;
 	right: 10px;
 }
+.sortrow {
+	background-color: #000000 !important;
+	color: white !important;
+}
