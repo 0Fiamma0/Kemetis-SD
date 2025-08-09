@@ -3395,7 +3395,7 @@ html,
 .button.mainmenu4,
 .button.mainmenu6,
 .button.mainmenu5 {
-    background: #404040 !important;
+    background: oklch(17.8% 0.067 268.67) !important;
     border: 1px #000;
 }
 
@@ -3405,7 +3405,7 @@ html,
 .button.mainmenu4:hover,
 .button.mainmenu6:hover,
 .button.mainmenu5:hover {
-    background: #808080 !important;
+    background: oklch(45.0% 0.072 201.48) !important;
     border: 1px #000;
 }
 
@@ -3495,7 +3495,7 @@ html,
     background: #000;
 }
 .tabbar a.button:hover {
-    background: #9ABEE8;
+    background: black;
     color: #FFF;
 }
 .tabbar a.button:active {
