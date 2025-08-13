@@ -49,7 +49,7 @@ export const Formats: FormatList = [
 			'Tornadus', 'Thundurus', 'Landorus', 'Meloetta', 'Genesect', 'Xerneas', 'Yveltal', 'Zygarde', 'Diancie', 
 			'Hoopa', 'Volcanion', 'Cosmog', 'Cosmoem', 'Necrozma', 'Marshadow', 'Zeraora', 'Zamazenta', 'Kubfu', 
 			'Regieleki', 'Regidrago', 'Glastrier', 'Calyrex', 'Zarude', 'Wo-Chien', 'Chien-Pao', 'Ting-Lu', 'Chi-Yu', 
-			'Ogerpon', 'Terapagos', 'Pecharunt', 'Regipyros', 'Emutep', 
+			'Ogerpon', 'Terapagos', 'Pecharunt', 'Regipyros', 'Emutep', 'Tapu Koko', 'Tapu Fini', 'Tapu Bulu', 'Tapu Lele',
         
 			// Additional Paradox Pokemon from my original list (not already covered above)
 			'Great Tusk', 'Scream Tail', 'Brute Bonnet', 'Slither Wing', 'Sandy Shocks', 'Roaring Moon', 'Walking Wake',

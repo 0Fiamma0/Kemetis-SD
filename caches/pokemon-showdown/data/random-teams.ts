@@ -91,7 +91,7 @@ const NO_STAB = [
 	'dragontail', 'doomdesire', 'electroweb', 'eruption', 'explosion', 'fakeout', 'feint', 'flamecharge', 'flipturn', 'futuresight',
 	'grassyglide', 'iceshard', 'icywind', 'incinerate', 'infestation', 'machpunch', 'meteorbeam', 'mortalspin', 'nuzzle', 'pluck', 'pursuit',
 	'quickattack', 'rapidspin', 'reversal', 'selfdestruct', 'shadowsneak', 'skydrop', 'snarl', 'strugglebug', 'suckerpunch', 'uturn',
-	'vacuumwave', 'voltswitch', 'watershuriken', 'waterspout',
+	'vacuumwave', 'voltswitch', 'watershuriken', 'waterspout', 'stealthattack',
 ];
 // Hazard-setting moves
 const HAZARDS = [
@@ -1160,6 +1160,16 @@ export class RandomTeams {
 		if (species.id === 'jumpluff') return 'Infiltrator';
 		if (species.id === 'toucannon' && !counter.get('skilllink')) return 'Keen Eye';
 		if (species.id === 'reuniclus') return 'Magic Guard';
+		if (species.id === 'delphoxkemetis') return 'Magic Guard';
+		if (species.id === 'xatukemetis') return 'Lapis Flow';
+		if (species.id === 'dragonitekemetis') return 'Misty Surge';
+		if (species.id === 'salazzlekemetis') return 'Tough Claws';
+		if (species.id === 'beheeyemkemetis') return 'Earth Eater';
+		if (species.id === 'zangoosekemetis') return 'Guts';
+		if (species.id === 'toucannonkemetis') return 'Drizzle';
+		if (species.id === 'gyaradoskemetis') return 'No Guard';
+		if (species.id === 'ambipomkemetis') return 'Technician';
+		if (species.id === 'meerserve') return 'Intimidate';
 		if (species.id === 'smeargle' && !counter.get('technician')) return 'Own Tempo';
 		if (species.id === 'zebstrika') return (moves.has('wildcharge')) ? 'Sap Sipper' : 'Lightning Rod';
 		if (species.id === 'sandaconda' || (species.id === 'scrafty' && moves.has('rest'))) return 'Shed Skin';
@@ -1345,7 +1355,7 @@ export class RandomTeams {
 		if ((ability === 'Guts' || moves.has('facade')) && !moves.has('sleeptalk')) {
 			return (types.includes('Fire') || ability === 'Toxic Boost') ? 'Toxic Orb' : 'Flame Orb';
 		}
-		if (species.id === 'reuniclus' || (ability === 'Sheer Force' && counter.get('sheerforce'))) return 'Life Orb';
+		if ((species.id === 'reuniclus' || species.id === 'delphoxkemetis') || (ability === 'Sheer Force' && counter.get('sheerforce'))) return 'Life Orb';
 		if (ability === 'Anger Shell') return this.sample(['Rindo Berry', 'Passho Berry', 'Scope Lens', 'Sitrus Berry']);
 		if (moves.has('dragondance') && isDoubles) return 'Clear Amulet';
 		if (counter.get('skilllink') && ability !== 'Skill Link' && species.id !== 'breloom') return 'Loaded Dice';
@@ -1364,7 +1374,7 @@ export class RandomTeams {
 			return 'Chesto Berry';
 		}
 		if (
-			species.id !== 'yanmega' &&
+			(species.id !== 'yanmega' || species.id !== 'ledyarkle') &&
 			this.dex.getEffectiveness('Rock', species) >= 2 && (!types.includes('Flying') || !isDoubles)
 		) return 'Heavy-Duty Boots';
 	}
@@ -1460,6 +1470,7 @@ export class RandomTeams {
 		role: RandomTeamsTypes.Role,
 	): string {
 		if (types.includes('Normal') && moves.has('fakeout')) return 'Silk Scarf';
+		if (types.includes('Dark') && moves.has('stealthattack')) return 'Black Glasses';
 		if (
 			species.id !== 'jirachi' && (counter.get('Physical') >= 4) &&
 			['dragontail', 'fakeout', 'firstimpression', 'flamecharge', 'rapidspin'].every(m => !moves.has(m))
